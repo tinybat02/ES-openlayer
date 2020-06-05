@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import ReactDOM from 'react-dom';
 import { PanelProps, Vector as VectorData } from '@grafana/data';
+import VectorSource from 'ol/source/Vector';
 import { MapOptions } from '../types';
 import { Map, View } from 'ol';
 import XYZ from 'ol/source/XYZ';
@@ -43,7 +44,6 @@ export class MainPanel extends PureComponent<Props> {
       center_lon,
       center_lat,
     } = this.props.options;
-    const { buffer } = this.props.data.series[0].fields[0].values as Buffer;
 
     const carto = new TileLayer({
       source: new XYZ({
@@ -79,7 +79,15 @@ export class MainPanel extends PureComponent<Props> {
       this.map.addLayer(this.randomTile);
     }
 
-    const vectorSource = processDataES(buffer);
+    let vectorSource: VectorSource;
+    if (this.props.data.series.length > 0) {
+      const { buffer } = this.props.data.series[0].fields[0].values as Buffer;
+      vectorSource = processDataES(buffer);
+    } else {
+      vectorSource = new VectorSource({
+        features: [],
+      });
+    }
 
     if (markersLayer) {
       this.markersLayer = new VectorLayer({
@@ -125,14 +133,30 @@ export class MainPanel extends PureComponent<Props> {
 
   componentDidUpdate(prevProps: Props) {
     if (prevProps.data.series[0] !== this.props.data.series[0]) {
-      const { buffer } = this.props.data.series[0].fields[0].values as Buffer;
-      const { markersLayer, marker_radius, marker_color, marker_stroke, heatmapLayer, heat_blur, heat_radius, heat_opacity } = this.props.options;
+      const {
+        markersLayer,
+        marker_radius,
+        marker_color,
+        marker_stroke,
+        heatmapLayer,
+        heat_blur,
+        heat_radius,
+        heat_opacity,
+      } = this.props.options;
 
       // remove existing layers
       this.map.removeLayer(this.markersLayer);
       this.map.removeLayer(this.heatmapLayer);
 
-      const vectorSource = processDataES(buffer);
+      let vectorSource: VectorSource;
+      if (this.props.data.series.length > 0) {
+        const { buffer } = this.props.data.series[0].fields[0].values as Buffer;
+        vectorSource = processDataES(buffer);
+      } else {
+        vectorSource = new VectorSource({
+          features: [],
+        });
+      }
 
       if (markersLayer) {
         this.markersLayer = new VectorLayer({
@@ -226,7 +250,10 @@ export class MainPanel extends PureComponent<Props> {
       this.map.getView().setZoom(this.props.options.zoom_level);
     }
 
-    if (prevProps.options.center_lat !== this.props.options.center_lat || prevProps.options.center_lon !== this.props.options.center_lon) {
+    if (
+      prevProps.options.center_lat !== this.props.options.center_lat ||
+      prevProps.options.center_lon !== this.props.options.center_lon
+    ) {
       this.map.getView().animate({
         center: fromLonLat([this.props.options.center_lon, this.props.options.center_lat]),
         duration: 2000,

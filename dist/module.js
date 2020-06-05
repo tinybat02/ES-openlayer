@@ -1643,7 +1643,7 @@ define(["@grafana/ui","react","react-dom"], function(__WEBPACK_EXTERNAL_MODULE__
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../css-loader/dist/runtime/api.js */ "../node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, ".ol-box {\n  box-sizing: border-box;\n  border-radius: 2px;\n  border: 2px solid blue; }\n\n.ol-mouse-position {\n  top: 8px;\n  right: 8px;\n  position: absolute; }\n\n.ol-scale-line {\n  background: rgba(0, 60, 136, 0.3);\n  border-radius: 4px;\n  bottom: 8px;\n  left: 8px;\n  padding: 2px;\n  position: absolute; }\n\n.ol-scale-line-inner {\n  border: 1px solid #eee;\n  border-top: none;\n  color: #eee;\n  font-size: 10px;\n  text-align: center;\n  margin: 1px;\n  will-change: contents, width;\n  -webkit-transition: all 0.25s;\n  transition: all 0.25s; }\n\n.ol-scale-bar {\n  position: absolute;\n  bottom: 8px;\n  left: 8px; }\n\n.ol-scale-step-marker {\n  width: 1px;\n  height: 15px;\n  background-color: #000000;\n  float: right;\n  z-Index: 10; }\n\n.ol-scale-step-text {\n  position: absolute;\n  bottom: -5px;\n  font-size: 12px;\n  z-Index: 11;\n  color: #000000;\n  text-shadow: -2px 0 #FFFFFF, 0 2px #FFFFFF, 2px 0 #FFFFFF, 0 -2px #FFFFFF; }\n\n.ol-scale-text {\n  position: absolute;\n  font-size: 14px;\n  text-align: center;\n  bottom: 25px;\n  color: #000000;\n  text-shadow: -2px 0 #FFFFFF, 0 2px #FFFFFF, 2px 0 #FFFFFF, 0 -2px #FFFFFF; }\n\n.ol-scale-singlebar {\n  position: relative;\n  height: 10px;\n  z-Index: 9;\n  border: 1px solid black; }\n\n.ol-unsupported {\n  display: none; }\n\n.ol-viewport, .ol-unselectable {\n  -webkit-touch-callout: none;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }\n\n.ol-selectable {\n  -webkit-touch-callout: default;\n  -webkit-user-select: text;\n  -moz-user-select: text;\n  -ms-user-select: text;\n  user-select: text; }\n\n.ol-grabbing {\n  cursor: -webkit-grabbing;\n  cursor: grabbing; }\n\n.ol-grab {\n  cursor: move;\n  cursor: -webkit-grab;\n  cursor: grab; }\n\n.ol-control {\n  position: absolute;\n  background-color: rgba(255, 255, 255, 0.4);\n  border-radius: 4px;\n  padding: 2px; }\n\n.ol-control:hover {\n  background-color: rgba(255, 255, 255, 0.6); }\n\n.ol-zoom {\n  top: .5em;\n  left: .5em; }\n\n.ol-rotate {\n  top: .5em;\n  right: .5em;\n  -webkit-transition: opacity .25s linear, visibility 0s linear;\n  transition: opacity .25s linear, visibility 0s linear; }\n\n.ol-rotate.ol-hidden {\n  opacity: 0;\n  visibility: hidden;\n  -webkit-transition: opacity .25s linear, visibility 0s linear .25s;\n  transition: opacity .25s linear, visibility 0s linear .25s; }\n\n.ol-zoom-extent {\n  top: 4.643em;\n  left: .5em; }\n\n.ol-full-screen {\n  right: .5em;\n  top: .5em; }\n\n.ol-control button {\n  display: block;\n  margin: 1px;\n  padding: 0;\n  color: white;\n  font-size: 1.14em;\n  font-weight: bold;\n  text-decoration: none;\n  text-align: center;\n  height: 1.375em;\n  width: 1.375em;\n  line-height: .4em;\n  background-color: rgba(0, 60, 136, 0.5);\n  border: none;\n  border-radius: 2px; }\n\n.ol-control button::-moz-focus-inner {\n  border: none;\n  padding: 0; }\n\n.ol-zoom-extent button {\n  line-height: 1.4em; }\n\n.ol-compass {\n  display: block;\n  font-weight: normal;\n  font-size: 1.2em;\n  will-change: transform; }\n\n.ol-touch .ol-control button {\n  font-size: 1.5em; }\n\n.ol-touch .ol-zoom-extent {\n  top: 5.5em; }\n\n.ol-control button:hover,\n.ol-control button:focus {\n  text-decoration: none;\n  background-color: rgba(0, 60, 136, 0.7); }\n\n.ol-zoom .ol-zoom-in {\n  border-radius: 2px 2px 0 0; }\n\n.ol-zoom .ol-zoom-out {\n  border-radius: 0 0 2px 2px; }\n\n.ol-attribution {\n  text-align: right;\n  bottom: .5em;\n  right: .5em;\n  max-width: calc(100% - 1.3em); }\n\n.ol-attribution ul {\n  margin: 0;\n  padding: 0 .5em;\n  color: #000;\n  text-shadow: 0 0 2px #fff; }\n\n.ol-attribution li {\n  display: inline;\n  list-style: none; }\n\n.ol-attribution li:not(:last-child):after {\n  content: \" \"; }\n\n.ol-attribution img {\n  max-height: 2em;\n  max-width: inherit;\n  vertical-align: middle; }\n\n.ol-attribution ul, .ol-attribution button {\n  display: inline-block; }\n\n.ol-attribution.ol-collapsed ul {\n  display: none; }\n\n.ol-attribution:not(.ol-collapsed) {\n  background: rgba(255, 255, 255, 0.8); }\n\n.ol-attribution.ol-uncollapsible {\n  bottom: 0;\n  right: 0;\n  border-radius: 4px 0 0; }\n\n.ol-attribution.ol-uncollapsible img {\n  margin-top: -.2em;\n  max-height: 1.6em; }\n\n.ol-attribution.ol-uncollapsible button {\n  display: none; }\n\n.ol-zoomslider {\n  top: 4.5em;\n  left: .5em;\n  height: 200px; }\n\n.ol-zoomslider button {\n  position: relative;\n  height: 10px; }\n\n.ol-touch .ol-zoomslider {\n  top: 5.5em; }\n\n.ol-overviewmap {\n  left: 0.5em;\n  bottom: 0.5em; }\n\n.ol-overviewmap.ol-uncollapsible {\n  bottom: 0;\n  left: 0;\n  border-radius: 0 4px 0 0; }\n\n.ol-overviewmap .ol-overviewmap-map,\n.ol-overviewmap button {\n  display: inline-block; }\n\n.ol-overviewmap .ol-overviewmap-map {\n  border: 1px solid #7b98bc;\n  height: 150px;\n  margin: 2px;\n  width: 150px; }\n\n.ol-overviewmap:not(.ol-collapsed) button {\n  bottom: 1px;\n  left: 2px;\n  position: absolute; }\n\n.ol-overviewmap.ol-collapsed .ol-overviewmap-map,\n.ol-overviewmap.ol-uncollapsible button {\n  display: none; }\n\n.ol-overviewmap:not(.ol-collapsed) {\n  background: rgba(255, 255, 255, 0.8); }\n\n.ol-overviewmap-box {\n  border: 2px dotted rgba(0, 60, 136, 0.7); }\n\n.ol-overviewmap .ol-overviewmap-box:hover {\n  cursor: move; }\n", "",{"version":3,"sources":["ol.css"],"names":[],"mappings":"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","file":"ol.css","sourcesContent":[".ol-box {\n  box-sizing: border-box;\n  border-radius: 2px;\n  border: 2px solid blue; }\n\n.ol-mouse-position {\n  top: 8px;\n  right: 8px;\n  position: absolute; }\n\n.ol-scale-line {\n  background: rgba(0, 60, 136, 0.3);\n  border-radius: 4px;\n  bottom: 8px;\n  left: 8px;\n  padding: 2px;\n  position: absolute; }\n\n.ol-scale-line-inner {\n  border: 1px solid #eee;\n  border-top: none;\n  color: #eee;\n  font-size: 10px;\n  text-align: center;\n  margin: 1px;\n  will-change: contents, width;\n  transition: all 0.25s; }\n\n.ol-scale-bar {\n  position: absolute;\n  bottom: 8px;\n  left: 8px; }\n\n.ol-scale-step-marker {\n  width: 1px;\n  height: 15px;\n  background-color: #000000;\n  float: right;\n  z-Index: 10; }\n\n.ol-scale-step-text {\n  position: absolute;\n  bottom: -5px;\n  font-size: 12px;\n  z-Index: 11;\n  color: #000000;\n  text-shadow: -2px 0 #FFFFFF, 0 2px #FFFFFF, 2px 0 #FFFFFF, 0 -2px #FFFFFF; }\n\n.ol-scale-text {\n  position: absolute;\n  font-size: 14px;\n  text-align: center;\n  bottom: 25px;\n  color: #000000;\n  text-shadow: -2px 0 #FFFFFF, 0 2px #FFFFFF, 2px 0 #FFFFFF, 0 -2px #FFFFFF; }\n\n.ol-scale-singlebar {\n  position: relative;\n  height: 10px;\n  z-Index: 9;\n  border: 1px solid black; }\n\n.ol-unsupported {\n  display: none; }\n\n.ol-viewport, .ol-unselectable {\n  -webkit-touch-callout: none;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }\n\n.ol-selectable {\n  -webkit-touch-callout: default;\n  -webkit-user-select: text;\n  -moz-user-select: text;\n  -ms-user-select: text;\n  user-select: text; }\n\n.ol-grabbing {\n  cursor: -webkit-grabbing;\n  cursor: -moz-grabbing;\n  cursor: grabbing; }\n\n.ol-grab {\n  cursor: move;\n  cursor: -webkit-grab;\n  cursor: -moz-grab;\n  cursor: grab; }\n\n.ol-control {\n  position: absolute;\n  background-color: rgba(255, 255, 255, 0.4);\n  border-radius: 4px;\n  padding: 2px; }\n\n.ol-control:hover {\n  background-color: rgba(255, 255, 255, 0.6); }\n\n.ol-zoom {\n  top: .5em;\n  left: .5em; }\n\n.ol-rotate {\n  top: .5em;\n  right: .5em;\n  transition: opacity .25s linear, visibility 0s linear; }\n\n.ol-rotate.ol-hidden {\n  opacity: 0;\n  visibility: hidden;\n  transition: opacity .25s linear, visibility 0s linear .25s; }\n\n.ol-zoom-extent {\n  top: 4.643em;\n  left: .5em; }\n\n.ol-full-screen {\n  right: .5em;\n  top: .5em; }\n\n.ol-control button {\n  display: block;\n  margin: 1px;\n  padding: 0;\n  color: white;\n  font-size: 1.14em;\n  font-weight: bold;\n  text-decoration: none;\n  text-align: center;\n  height: 1.375em;\n  width: 1.375em;\n  line-height: .4em;\n  background-color: rgba(0, 60, 136, 0.5);\n  border: none;\n  border-radius: 2px; }\n\n.ol-control button::-moz-focus-inner {\n  border: none;\n  padding: 0; }\n\n.ol-zoom-extent button {\n  line-height: 1.4em; }\n\n.ol-compass {\n  display: block;\n  font-weight: normal;\n  font-size: 1.2em;\n  will-change: transform; }\n\n.ol-touch .ol-control button {\n  font-size: 1.5em; }\n\n.ol-touch .ol-zoom-extent {\n  top: 5.5em; }\n\n.ol-control button:hover,\n.ol-control button:focus {\n  text-decoration: none;\n  background-color: rgba(0, 60, 136, 0.7); }\n\n.ol-zoom .ol-zoom-in {\n  border-radius: 2px 2px 0 0; }\n\n.ol-zoom .ol-zoom-out {\n  border-radius: 0 0 2px 2px; }\n\n.ol-attribution {\n  text-align: right;\n  bottom: .5em;\n  right: .5em;\n  max-width: calc(100% - 1.3em); }\n\n.ol-attribution ul {\n  margin: 0;\n  padding: 0 .5em;\n  color: #000;\n  text-shadow: 0 0 2px #fff; }\n\n.ol-attribution li {\n  display: inline;\n  list-style: none; }\n\n.ol-attribution li:not(:last-child):after {\n  content: \" \"; }\n\n.ol-attribution img {\n  max-height: 2em;\n  max-width: inherit;\n  vertical-align: middle; }\n\n.ol-attribution ul, .ol-attribution button {\n  display: inline-block; }\n\n.ol-attribution.ol-collapsed ul {\n  display: none; }\n\n.ol-attribution:not(.ol-collapsed) {\n  background: rgba(255, 255, 255, 0.8); }\n\n.ol-attribution.ol-uncollapsible {\n  bottom: 0;\n  right: 0;\n  border-radius: 4px 0 0; }\n\n.ol-attribution.ol-uncollapsible img {\n  margin-top: -.2em;\n  max-height: 1.6em; }\n\n.ol-attribution.ol-uncollapsible button {\n  display: none; }\n\n.ol-zoomslider {\n  top: 4.5em;\n  left: .5em;\n  height: 200px; }\n\n.ol-zoomslider button {\n  position: relative;\n  height: 10px; }\n\n.ol-touch .ol-zoomslider {\n  top: 5.5em; }\n\n.ol-overviewmap {\n  left: 0.5em;\n  bottom: 0.5em; }\n\n.ol-overviewmap.ol-uncollapsible {\n  bottom: 0;\n  left: 0;\n  border-radius: 0 4px 0 0; }\n\n.ol-overviewmap .ol-overviewmap-map,\n.ol-overviewmap button {\n  display: inline-block; }\n\n.ol-overviewmap .ol-overviewmap-map {\n  border: 1px solid #7b98bc;\n  height: 150px;\n  margin: 2px;\n  width: 150px; }\n\n.ol-overviewmap:not(.ol-collapsed) button {\n  bottom: 1px;\n  left: 2px;\n  position: absolute; }\n\n.ol-overviewmap.ol-collapsed .ol-overviewmap-map,\n.ol-overviewmap.ol-uncollapsible button {\n  display: none; }\n\n.ol-overviewmap:not(.ol-collapsed) {\n  background: rgba(255, 255, 255, 0.8); }\n\n.ol-overviewmap-box {\n  border: 2px dotted rgba(0, 60, 136, 0.7); }\n\n.ol-overviewmap .ol-overviewmap-box:hover {\n  cursor: move; }\n"]}]);
+exports.push([module.i, ".ol-box {\n  box-sizing: border-box;\n  border-radius: 2px;\n  border: 2px solid blue; }\n\n.ol-mouse-position {\n  top: 8px;\n  right: 8px;\n  position: absolute; }\n\n.ol-scale-line {\n  background: rgba(0, 60, 136, 0.3);\n  border-radius: 4px;\n  bottom: 8px;\n  left: 8px;\n  padding: 2px;\n  position: absolute; }\n\n.ol-scale-line-inner {\n  border: 1px solid #eee;\n  border-top: none;\n  color: #eee;\n  font-size: 10px;\n  text-align: center;\n  margin: 1px;\n  will-change: contents, width;\n  transition: all 0.25s; }\n\n.ol-scale-bar {\n  position: absolute;\n  bottom: 8px;\n  left: 8px; }\n\n.ol-scale-step-marker {\n  width: 1px;\n  height: 15px;\n  background-color: #000000;\n  float: right;\n  z-Index: 10; }\n\n.ol-scale-step-text {\n  position: absolute;\n  bottom: -5px;\n  font-size: 12px;\n  z-Index: 11;\n  color: #000000;\n  text-shadow: -2px 0 #FFFFFF, 0 2px #FFFFFF, 2px 0 #FFFFFF, 0 -2px #FFFFFF; }\n\n.ol-scale-text {\n  position: absolute;\n  font-size: 14px;\n  text-align: center;\n  bottom: 25px;\n  color: #000000;\n  text-shadow: -2px 0 #FFFFFF, 0 2px #FFFFFF, 2px 0 #FFFFFF, 0 -2px #FFFFFF; }\n\n.ol-scale-singlebar {\n  position: relative;\n  height: 10px;\n  z-Index: 9;\n  border: 1px solid black; }\n\n.ol-unsupported {\n  display: none; }\n\n.ol-viewport, .ol-unselectable {\n  -webkit-touch-callout: none;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }\n\n.ol-selectable {\n  -webkit-touch-callout: default;\n  -webkit-user-select: text;\n  -moz-user-select: text;\n  -ms-user-select: text;\n  user-select: text; }\n\n.ol-grabbing {\n  cursor: -webkit-grabbing;\n  cursor: grabbing; }\n\n.ol-grab {\n  cursor: move;\n  cursor: -webkit-grab;\n  cursor: grab; }\n\n.ol-control {\n  position: absolute;\n  background-color: rgba(255, 255, 255, 0.4);\n  border-radius: 4px;\n  padding: 2px; }\n\n.ol-control:hover {\n  background-color: rgba(255, 255, 255, 0.6); }\n\n.ol-zoom {\n  top: .5em;\n  left: .5em; }\n\n.ol-rotate {\n  top: .5em;\n  right: .5em;\n  transition: opacity .25s linear, visibility 0s linear; }\n\n.ol-rotate.ol-hidden {\n  opacity: 0;\n  visibility: hidden;\n  transition: opacity .25s linear, visibility 0s linear .25s; }\n\n.ol-zoom-extent {\n  top: 4.643em;\n  left: .5em; }\n\n.ol-full-screen {\n  right: .5em;\n  top: .5em; }\n\n.ol-control button {\n  display: block;\n  margin: 1px;\n  padding: 0;\n  color: white;\n  font-size: 1.14em;\n  font-weight: bold;\n  text-decoration: none;\n  text-align: center;\n  height: 1.375em;\n  width: 1.375em;\n  line-height: .4em;\n  background-color: rgba(0, 60, 136, 0.5);\n  border: none;\n  border-radius: 2px; }\n\n.ol-control button::-moz-focus-inner {\n  border: none;\n  padding: 0; }\n\n.ol-zoom-extent button {\n  line-height: 1.4em; }\n\n.ol-compass {\n  display: block;\n  font-weight: normal;\n  font-size: 1.2em;\n  will-change: transform; }\n\n.ol-touch .ol-control button {\n  font-size: 1.5em; }\n\n.ol-touch .ol-zoom-extent {\n  top: 5.5em; }\n\n.ol-control button:hover,\n.ol-control button:focus {\n  text-decoration: none;\n  background-color: rgba(0, 60, 136, 0.7); }\n\n.ol-zoom .ol-zoom-in {\n  border-radius: 2px 2px 0 0; }\n\n.ol-zoom .ol-zoom-out {\n  border-radius: 0 0 2px 2px; }\n\n.ol-attribution {\n  text-align: right;\n  bottom: .5em;\n  right: .5em;\n  max-width: calc(100% - 1.3em); }\n\n.ol-attribution ul {\n  margin: 0;\n  padding: 0 .5em;\n  color: #000;\n  text-shadow: 0 0 2px #fff; }\n\n.ol-attribution li {\n  display: inline;\n  list-style: none; }\n\n.ol-attribution li:not(:last-child):after {\n  content: \" \"; }\n\n.ol-attribution img {\n  max-height: 2em;\n  max-width: inherit;\n  vertical-align: middle; }\n\n.ol-attribution ul, .ol-attribution button {\n  display: inline-block; }\n\n.ol-attribution.ol-collapsed ul {\n  display: none; }\n\n.ol-attribution:not(.ol-collapsed) {\n  background: rgba(255, 255, 255, 0.8); }\n\n.ol-attribution.ol-uncollapsible {\n  bottom: 0;\n  right: 0;\n  border-radius: 4px 0 0; }\n\n.ol-attribution.ol-uncollapsible img {\n  margin-top: -.2em;\n  max-height: 1.6em; }\n\n.ol-attribution.ol-uncollapsible button {\n  display: none; }\n\n.ol-zoomslider {\n  top: 4.5em;\n  left: .5em;\n  height: 200px; }\n\n.ol-zoomslider button {\n  position: relative;\n  height: 10px; }\n\n.ol-touch .ol-zoomslider {\n  top: 5.5em; }\n\n.ol-overviewmap {\n  left: 0.5em;\n  bottom: 0.5em; }\n\n.ol-overviewmap.ol-uncollapsible {\n  bottom: 0;\n  left: 0;\n  border-radius: 0 4px 0 0; }\n\n.ol-overviewmap .ol-overviewmap-map,\n.ol-overviewmap button {\n  display: inline-block; }\n\n.ol-overviewmap .ol-overviewmap-map {\n  border: 1px solid #7b98bc;\n  height: 150px;\n  margin: 2px;\n  width: 150px; }\n\n.ol-overviewmap:not(.ol-collapsed) button {\n  bottom: 1px;\n  left: 2px;\n  position: absolute; }\n\n.ol-overviewmap.ol-collapsed .ol-overviewmap-map,\n.ol-overviewmap.ol-uncollapsible button {\n  display: none; }\n\n.ol-overviewmap:not(.ol-collapsed) {\n  background: rgba(255, 255, 255, 0.8); }\n\n.ol-overviewmap-box {\n  border: 2px dotted rgba(0, 60, 136, 0.7); }\n\n.ol-overviewmap .ol-overviewmap-box:hover {\n  cursor: move; }\n", "",{"version":3,"sources":["ol.css"],"names":[],"mappings":"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","file":"ol.css","sourcesContent":[".ol-box {\n  box-sizing: border-box;\n  border-radius: 2px;\n  border: 2px solid blue; }\n\n.ol-mouse-position {\n  top: 8px;\n  right: 8px;\n  position: absolute; }\n\n.ol-scale-line {\n  background: rgba(0, 60, 136, 0.3);\n  border-radius: 4px;\n  bottom: 8px;\n  left: 8px;\n  padding: 2px;\n  position: absolute; }\n\n.ol-scale-line-inner {\n  border: 1px solid #eee;\n  border-top: none;\n  color: #eee;\n  font-size: 10px;\n  text-align: center;\n  margin: 1px;\n  will-change: contents, width;\n  transition: all 0.25s; }\n\n.ol-scale-bar {\n  position: absolute;\n  bottom: 8px;\n  left: 8px; }\n\n.ol-scale-step-marker {\n  width: 1px;\n  height: 15px;\n  background-color: #000000;\n  float: right;\n  z-Index: 10; }\n\n.ol-scale-step-text {\n  position: absolute;\n  bottom: -5px;\n  font-size: 12px;\n  z-Index: 11;\n  color: #000000;\n  text-shadow: -2px 0 #FFFFFF, 0 2px #FFFFFF, 2px 0 #FFFFFF, 0 -2px #FFFFFF; }\n\n.ol-scale-text {\n  position: absolute;\n  font-size: 14px;\n  text-align: center;\n  bottom: 25px;\n  color: #000000;\n  text-shadow: -2px 0 #FFFFFF, 0 2px #FFFFFF, 2px 0 #FFFFFF, 0 -2px #FFFFFF; }\n\n.ol-scale-singlebar {\n  position: relative;\n  height: 10px;\n  z-Index: 9;\n  border: 1px solid black; }\n\n.ol-unsupported {\n  display: none; }\n\n.ol-viewport, .ol-unselectable {\n  -webkit-touch-callout: none;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }\n\n.ol-selectable {\n  -webkit-touch-callout: default;\n  -webkit-user-select: text;\n  -moz-user-select: text;\n  -ms-user-select: text;\n  user-select: text; }\n\n.ol-grabbing {\n  cursor: -webkit-grabbing;\n  cursor: -moz-grabbing;\n  cursor: grabbing; }\n\n.ol-grab {\n  cursor: move;\n  cursor: -webkit-grab;\n  cursor: -moz-grab;\n  cursor: grab; }\n\n.ol-control {\n  position: absolute;\n  background-color: rgba(255, 255, 255, 0.4);\n  border-radius: 4px;\n  padding: 2px; }\n\n.ol-control:hover {\n  background-color: rgba(255, 255, 255, 0.6); }\n\n.ol-zoom {\n  top: .5em;\n  left: .5em; }\n\n.ol-rotate {\n  top: .5em;\n  right: .5em;\n  transition: opacity .25s linear, visibility 0s linear; }\n\n.ol-rotate.ol-hidden {\n  opacity: 0;\n  visibility: hidden;\n  transition: opacity .25s linear, visibility 0s linear .25s; }\n\n.ol-zoom-extent {\n  top: 4.643em;\n  left: .5em; }\n\n.ol-full-screen {\n  right: .5em;\n  top: .5em; }\n\n.ol-control button {\n  display: block;\n  margin: 1px;\n  padding: 0;\n  color: white;\n  font-size: 1.14em;\n  font-weight: bold;\n  text-decoration: none;\n  text-align: center;\n  height: 1.375em;\n  width: 1.375em;\n  line-height: .4em;\n  background-color: rgba(0, 60, 136, 0.5);\n  border: none;\n  border-radius: 2px; }\n\n.ol-control button::-moz-focus-inner {\n  border: none;\n  padding: 0; }\n\n.ol-zoom-extent button {\n  line-height: 1.4em; }\n\n.ol-compass {\n  display: block;\n  font-weight: normal;\n  font-size: 1.2em;\n  will-change: transform; }\n\n.ol-touch .ol-control button {\n  font-size: 1.5em; }\n\n.ol-touch .ol-zoom-extent {\n  top: 5.5em; }\n\n.ol-control button:hover,\n.ol-control button:focus {\n  text-decoration: none;\n  background-color: rgba(0, 60, 136, 0.7); }\n\n.ol-zoom .ol-zoom-in {\n  border-radius: 2px 2px 0 0; }\n\n.ol-zoom .ol-zoom-out {\n  border-radius: 0 0 2px 2px; }\n\n.ol-attribution {\n  text-align: right;\n  bottom: .5em;\n  right: .5em;\n  max-width: calc(100% - 1.3em); }\n\n.ol-attribution ul {\n  margin: 0;\n  padding: 0 .5em;\n  color: #000;\n  text-shadow: 0 0 2px #fff; }\n\n.ol-attribution li {\n  display: inline;\n  list-style: none; }\n\n.ol-attribution li:not(:last-child):after {\n  content: \" \"; }\n\n.ol-attribution img {\n  max-height: 2em;\n  max-width: inherit;\n  vertical-align: middle; }\n\n.ol-attribution ul, .ol-attribution button {\n  display: inline-block; }\n\n.ol-attribution.ol-collapsed ul {\n  display: none; }\n\n.ol-attribution:not(.ol-collapsed) {\n  background: rgba(255, 255, 255, 0.8); }\n\n.ol-attribution.ol-uncollapsible {\n  bottom: 0;\n  right: 0;\n  border-radius: 4px 0 0; }\n\n.ol-attribution.ol-uncollapsible img {\n  margin-top: -.2em;\n  max-height: 1.6em; }\n\n.ol-attribution.ol-uncollapsible button {\n  display: none; }\n\n.ol-zoomslider {\n  top: 4.5em;\n  left: .5em;\n  height: 200px; }\n\n.ol-zoomslider button {\n  position: relative;\n  height: 10px; }\n\n.ol-touch .ol-zoomslider {\n  top: 5.5em; }\n\n.ol-overviewmap {\n  left: 0.5em;\n  bottom: 0.5em; }\n\n.ol-overviewmap.ol-uncollapsible {\n  bottom: 0;\n  left: 0;\n  border-radius: 0 4px 0 0; }\n\n.ol-overviewmap .ol-overviewmap-map,\n.ol-overviewmap button {\n  display: inline-block; }\n\n.ol-overviewmap .ol-overviewmap-map {\n  border: 1px solid #7b98bc;\n  height: 150px;\n  margin: 2px;\n  width: 150px; }\n\n.ol-overviewmap:not(.ol-collapsed) button {\n  bottom: 1px;\n  left: 2px;\n  position: absolute; }\n\n.ol-overviewmap.ol-collapsed .ol-overviewmap-map,\n.ol-overviewmap.ol-uncollapsible button {\n  display: none; }\n\n.ol-overviewmap:not(.ol-collapsed) {\n  background: rgba(255, 255, 255, 0.8); }\n\n.ol-overviewmap-box {\n  border: 2px dotted rgba(0, 60, 136, 0.7); }\n\n.ol-overviewmap .ol-overviewmap-box:hover {\n  cursor: move; }\n"]}]);
 // Exports
 module.exports = exports;
 
@@ -1701,14 +1701,32 @@ module.exports = function (useSourceMap) {
   // eslint-disable-next-line func-names
 
 
-  list.i = function (modules, mediaQuery) {
+  list.i = function (modules, mediaQuery, dedupe) {
     if (typeof modules === 'string') {
       // eslint-disable-next-line no-param-reassign
       modules = [[null, modules, '']];
     }
 
-    for (var i = 0; i < modules.length; i++) {
-      var item = [].concat(modules[i]);
+    var alreadyImportedModules = {};
+
+    if (dedupe) {
+      for (var i = 0; i < this.length; i++) {
+        // eslint-disable-next-line prefer-destructuring
+        var id = this[i][0];
+
+        if (id != null) {
+          alreadyImportedModules[id] = true;
+        }
+      }
+    }
+
+    for (var _i = 0; _i < modules.length; _i++) {
+      var item = [].concat(modules[_i]);
+
+      if (dedupe && alreadyImportedModules[item[0]]) {
+        // eslint-disable-next-line no-continue
+        continue;
+      }
 
       if (mediaQuery) {
         if (!item[2]) {
@@ -1737,7 +1755,7 @@ function cssWithMappingToString(item, useSourceMap) {
   if (useSourceMap && typeof btoa === 'function') {
     var sourceMapping = toComment(cssMapping);
     var sourceURLs = cssMapping.sources.map(function (source) {
-      return "/*# sourceURL=".concat(cssMapping.sourceRoot).concat(source, " */");
+      return "/*# sourceURL=".concat(cssMapping.sourceRoot || '').concat(source, " */");
     });
     return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
   }
@@ -52551,7 +52569,7 @@ module.exports = function (css) {
 /*!******************************************!*\
   !*** ../node_modules/tslib/tslib.es6.js ***!
   \******************************************/
-/*! exports provided: __extends, __assign, __rest, __decorate, __param, __metadata, __awaiter, __generator, __exportStar, __values, __read, __spread, __spreadArrays, __await, __asyncGenerator, __asyncDelegator, __asyncValues, __makeTemplateObject, __importStar, __importDefault */
+/*! exports provided: __extends, __assign, __rest, __decorate, __param, __metadata, __awaiter, __generator, __createBinding, __exportStar, __values, __read, __spread, __spreadArrays, __await, __asyncGenerator, __asyncDelegator, __asyncValues, __makeTemplateObject, __importStar, __importDefault, __classPrivateFieldGet, __classPrivateFieldSet */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -52564,6 +52582,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__metadata", function() { return __metadata; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__awaiter", function() { return __awaiter; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__generator", function() { return __generator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__createBinding", function() { return __createBinding; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__exportStar", function() { return __exportStar; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__values", function() { return __values; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__read", function() { return __read; });
@@ -52576,19 +52595,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__makeTemplateObject", function() { return __makeTemplateObject; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importStar", function() { return __importStar; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importDefault", function() { return __importDefault; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__classPrivateFieldGet", function() { return __classPrivateFieldGet; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__classPrivateFieldSet", function() { return __classPrivateFieldSet; });
 /*! *****************************************************************************
-Copyright (c) Microsoft Corporation. All rights reserved.
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use
-this file except in compliance with the License. You may obtain a copy of the
-License at http://www.apache.org/licenses/LICENSE-2.0
+Copyright (c) Microsoft Corporation.
 
-THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
-WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
-MERCHANTABLITY OR NON-INFRINGEMENT.
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
 
-See the Apache Version 2.0 License for specific language governing permissions
-and limitations under the License.
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
 ***************************************************************************** */
 /* global Reflect, Promise */
 
@@ -52644,10 +52665,11 @@ function __metadata(metadataKey, metadataValue) {
 }
 
 function __awaiter(thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
         function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 }
@@ -52680,19 +52702,25 @@ function __generator(thisArg, body) {
     }
 }
 
+function __createBinding(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}
+
 function __exportStar(m, exports) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 
 function __values(o) {
-    var m = typeof Symbol === "function" && o[Symbol.iterator], i = 0;
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
     if (m) return m.call(o);
-    return {
+    if (o && typeof o.length === "number") return {
         next: function () {
             if (o && i >= o.length) o = void 0;
             return { value: o && o[i++], done: !o };
         }
     };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
 }
 
 function __read(o, n) {
@@ -52773,6 +52801,21 @@ function __importDefault(mod) {
     return (mod && mod.__esModule) ? mod : { default: mod };
 }
 
+function __classPrivateFieldGet(receiver, privateMap) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to get private field on non-instance");
+    }
+    return privateMap.get(receiver);
+}
+
+function __classPrivateFieldSet(receiver, privateMap, value) {
+    if (!privateMap.has(receiver)) {
+        throw new TypeError("attempted to set private field on non-instance");
+    }
+    privateMap.set(receiver, value);
+    return value;
+}
+
 
 /***/ }),
 
@@ -52791,22 +52834,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "react-dom");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var ol__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ol */ "../node_modules/ol/index.js");
-/* harmony import */ var ol_source_XYZ__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ol/source/XYZ */ "../node_modules/ol/source/XYZ.js");
-/* harmony import */ var ol_layer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ol/layer */ "../node_modules/ol/layer.js");
-/* harmony import */ var ol_proj__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ol/proj */ "../node_modules/ol/proj.js");
-/* harmony import */ var ol_interaction__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ol/interaction */ "../node_modules/ol/interaction.js");
-/* harmony import */ var ol_events_condition__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ol/events/condition */ "../node_modules/ol/events/condition.js");
-/* harmony import */ var ol_style__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ol/style */ "../node_modules/ol/style.js");
-/* harmony import */ var ol_layer_Heatmap__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ol/layer/Heatmap */ "../node_modules/ol/layer/Heatmap.js");
-/* harmony import */ var ol_control_Control__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ol/control/Control */ "../node_modules/ol/control/Control.js");
-/* harmony import */ var nanoid__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! nanoid */ "../node_modules/nanoid/index.browser.js");
-/* harmony import */ var nanoid__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(nanoid__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _utils_helpers__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./utils/helpers */ "./components/utils/helpers.ts");
-/* harmony import */ var ol_ol_css__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ol/ol.css */ "../node_modules/ol/ol.css");
-/* harmony import */ var ol_ol_css__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(ol_ol_css__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _style_MainPanel_css__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../style/MainPanel.css */ "./style/MainPanel.css");
-/* harmony import */ var _style_MainPanel_css__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_style_MainPanel_css__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var ol_source_Vector__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ol/source/Vector */ "../node_modules/ol/source/Vector.js");
+/* harmony import */ var ol__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ol */ "../node_modules/ol/index.js");
+/* harmony import */ var ol_source_XYZ__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ol/source/XYZ */ "../node_modules/ol/source/XYZ.js");
+/* harmony import */ var ol_layer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ol/layer */ "../node_modules/ol/layer.js");
+/* harmony import */ var ol_proj__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ol/proj */ "../node_modules/ol/proj.js");
+/* harmony import */ var ol_interaction__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ol/interaction */ "../node_modules/ol/interaction.js");
+/* harmony import */ var ol_events_condition__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ol/events/condition */ "../node_modules/ol/events/condition.js");
+/* harmony import */ var ol_style__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ol/style */ "../node_modules/ol/style.js");
+/* harmony import */ var ol_layer_Heatmap__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ol/layer/Heatmap */ "../node_modules/ol/layer/Heatmap.js");
+/* harmony import */ var ol_control_Control__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ol/control/Control */ "../node_modules/ol/control/Control.js");
+/* harmony import */ var nanoid__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! nanoid */ "../node_modules/nanoid/index.browser.js");
+/* harmony import */ var nanoid__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(nanoid__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _utils_helpers__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./utils/helpers */ "./components/utils/helpers.ts");
+/* harmony import */ var ol_ol_css__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ol/ol.css */ "../node_modules/ol/ol.css");
+/* harmony import */ var ol_ol_css__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(ol_ol_css__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _style_MainPanel_css__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../style/MainPanel.css */ "./style/MainPanel.css");
+/* harmony import */ var _style_MainPanel_css__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_style_MainPanel_css__WEBPACK_IMPORTED_MODULE_16__);
+
 
 
 
@@ -52832,7 +52877,7 @@ function (_super) {
   function MainPanel() {
     var _this = _super !== null && _super.apply(this, arguments) || this;
 
-    _this.id = 'id' + nanoid__WEBPACK_IMPORTED_MODULE_12___default()();
+    _this.id = 'id' + nanoid__WEBPACK_IMPORTED_MODULE_13___default()();
 
     _this.handleSwitch = function (e) {
       var _a = _this.props,
@@ -52871,35 +52916,34 @@ function (_super) {
         heat_opacity = _a.heat_opacity,
         center_lon = _a.center_lon,
         center_lat = _a.center_lat;
-    var buffer = this.props.data.series[0].fields[0].values.buffer;
-    var carto = new ol_layer__WEBPACK_IMPORTED_MODULE_5__["Tile"]({
-      source: new ol_source_XYZ__WEBPACK_IMPORTED_MODULE_4__["default"]({
+    var carto = new ol_layer__WEBPACK_IMPORTED_MODULE_6__["Tile"]({
+      source: new ol_source_XYZ__WEBPACK_IMPORTED_MODULE_5__["default"]({
         url: 'https://{1-4}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png'
       })
     });
-    this.map = new ol__WEBPACK_IMPORTED_MODULE_3__["Map"]({
-      interactions: Object(ol_interaction__WEBPACK_IMPORTED_MODULE_7__["defaults"])({
+    this.map = new ol__WEBPACK_IMPORTED_MODULE_4__["Map"]({
+      interactions: Object(ol_interaction__WEBPACK_IMPORTED_MODULE_8__["defaults"])({
         dragPan: false,
         mouseWheelZoom: false,
         onFocusOnly: true
-      }).extend([new ol_interaction__WEBPACK_IMPORTED_MODULE_7__["DragPan"]({
+      }).extend([new ol_interaction__WEBPACK_IMPORTED_MODULE_8__["DragPan"]({
         condition: function condition(event) {
-          return Object(ol_events_condition__WEBPACK_IMPORTED_MODULE_8__["platformModifierKeyOnly"])(event) || this.getPointerCount() === 2;
+          return Object(ol_events_condition__WEBPACK_IMPORTED_MODULE_9__["platformModifierKeyOnly"])(event) || this.getPointerCount() === 2;
         }
-      }), new ol_interaction__WEBPACK_IMPORTED_MODULE_7__["MouseWheelZoom"]({
-        condition: ol_events_condition__WEBPACK_IMPORTED_MODULE_8__["platformModifierKeyOnly"]
+      }), new ol_interaction__WEBPACK_IMPORTED_MODULE_8__["MouseWheelZoom"]({
+        condition: ol_events_condition__WEBPACK_IMPORTED_MODULE_9__["platformModifierKeyOnly"]
       })]),
       layers: [carto],
-      view: new ol__WEBPACK_IMPORTED_MODULE_3__["View"]({
-        center: Object(ol_proj__WEBPACK_IMPORTED_MODULE_6__["fromLonLat"])([center_lon, center_lat]),
+      view: new ol__WEBPACK_IMPORTED_MODULE_4__["View"]({
+        center: Object(ol_proj__WEBPACK_IMPORTED_MODULE_7__["fromLonLat"])([center_lon, center_lat]),
         zoom: zoom_level
       }),
       target: this.id
     });
 
     if (tile_url !== '') {
-      this.randomTile = new ol_layer__WEBPACK_IMPORTED_MODULE_5__["Tile"]({
-        source: new ol_source_XYZ__WEBPACK_IMPORTED_MODULE_4__["default"]({
+      this.randomTile = new ol_layer__WEBPACK_IMPORTED_MODULE_6__["Tile"]({
+        source: new ol_source_XYZ__WEBPACK_IMPORTED_MODULE_5__["default"]({
           url: tile_url
         }),
         zIndex: 1
@@ -52907,19 +52951,28 @@ function (_super) {
       this.map.addLayer(this.randomTile);
     }
 
-    var vectorSource = Object(_utils_helpers__WEBPACK_IMPORTED_MODULE_13__["processDataES"])(buffer);
+    var vectorSource;
+
+    if (this.props.data.series.length > 0) {
+      var buffer = this.props.data.series[0].fields[0].values.buffer;
+      vectorSource = Object(_utils_helpers__WEBPACK_IMPORTED_MODULE_14__["processDataES"])(buffer);
+    } else {
+      vectorSource = new ol_source_Vector__WEBPACK_IMPORTED_MODULE_3__["default"]({
+        features: []
+      });
+    }
 
     if (markersLayer) {
-      this.markersLayer = new ol_layer__WEBPACK_IMPORTED_MODULE_5__["Vector"]({
+      this.markersLayer = new ol_layer__WEBPACK_IMPORTED_MODULE_6__["Vector"]({
         source: vectorSource,
         zIndex: 2,
-        style: new ol_style__WEBPACK_IMPORTED_MODULE_9__["Style"]({
-          image: new ol_style__WEBPACK_IMPORTED_MODULE_9__["Circle"]({
+        style: new ol_style__WEBPACK_IMPORTED_MODULE_10__["Style"]({
+          image: new ol_style__WEBPACK_IMPORTED_MODULE_10__["Circle"]({
             radius: marker_radius,
-            fill: new ol_style__WEBPACK_IMPORTED_MODULE_9__["Fill"]({
+            fill: new ol_style__WEBPACK_IMPORTED_MODULE_10__["Fill"]({
               color: marker_color
             }),
-            stroke: new ol_style__WEBPACK_IMPORTED_MODULE_9__["Stroke"]({
+            stroke: new ol_style__WEBPACK_IMPORTED_MODULE_10__["Stroke"]({
               color: marker_stroke,
               width: 1
             })
@@ -52930,7 +52983,7 @@ function (_super) {
     }
 
     if (heatmapLayer) {
-      this.heatmapLayer = new ol_layer_Heatmap__WEBPACK_IMPORTED_MODULE_10__["default"]({
+      this.heatmapLayer = new ol_layer_Heatmap__WEBPACK_IMPORTED_MODULE_11__["default"]({
         source: vectorSource,
         blur: parseInt(heat_blur, 10),
         radius: parseInt(heat_radius, 10),
@@ -52951,7 +53004,7 @@ function (_super) {
     var div = document.createElement('div');
     div.className = 'ol-control ol-custom-control';
     react_dom__WEBPACK_IMPORTED_MODULE_2___default.a.render(jsx, div);
-    var ctl = new ol_control_Control__WEBPACK_IMPORTED_MODULE_11__["default"]({
+    var ctl = new ol_control_Control__WEBPACK_IMPORTED_MODULE_12__["default"]({
       element: div
     });
     this.map.addControl(ctl);
@@ -52959,7 +53012,6 @@ function (_super) {
 
   MainPanel.prototype.componentDidUpdate = function (prevProps) {
     if (prevProps.data.series[0] !== this.props.data.series[0]) {
-      var buffer = this.props.data.series[0].fields[0].values.buffer;
       var _a = this.props.options,
           markersLayer = _a.markersLayer,
           marker_radius = _a.marker_radius,
@@ -52972,19 +53024,28 @@ function (_super) {
 
       this.map.removeLayer(this.markersLayer);
       this.map.removeLayer(this.heatmapLayer);
-      var vectorSource = Object(_utils_helpers__WEBPACK_IMPORTED_MODULE_13__["processDataES"])(buffer);
+      var vectorSource = void 0;
+
+      if (this.props.data.series.length > 0) {
+        var buffer = this.props.data.series[0].fields[0].values.buffer;
+        vectorSource = Object(_utils_helpers__WEBPACK_IMPORTED_MODULE_14__["processDataES"])(buffer);
+      } else {
+        vectorSource = new ol_source_Vector__WEBPACK_IMPORTED_MODULE_3__["default"]({
+          features: []
+        });
+      }
 
       if (markersLayer) {
-        this.markersLayer = new ol_layer__WEBPACK_IMPORTED_MODULE_5__["Vector"]({
+        this.markersLayer = new ol_layer__WEBPACK_IMPORTED_MODULE_6__["Vector"]({
           source: vectorSource,
           zIndex: 2,
-          style: new ol_style__WEBPACK_IMPORTED_MODULE_9__["Style"]({
-            image: new ol_style__WEBPACK_IMPORTED_MODULE_9__["Circle"]({
+          style: new ol_style__WEBPACK_IMPORTED_MODULE_10__["Style"]({
+            image: new ol_style__WEBPACK_IMPORTED_MODULE_10__["Circle"]({
               radius: marker_radius,
-              fill: new ol_style__WEBPACK_IMPORTED_MODULE_9__["Fill"]({
+              fill: new ol_style__WEBPACK_IMPORTED_MODULE_10__["Fill"]({
                 color: marker_color
               }),
-              stroke: new ol_style__WEBPACK_IMPORTED_MODULE_9__["Stroke"]({
+              stroke: new ol_style__WEBPACK_IMPORTED_MODULE_10__["Stroke"]({
                 color: marker_stroke,
                 width: 1
               })
@@ -52995,7 +53056,7 @@ function (_super) {
       }
 
       if (heatmapLayer) {
-        this.heatmapLayer = new ol_layer_Heatmap__WEBPACK_IMPORTED_MODULE_10__["default"]({
+        this.heatmapLayer = new ol_layer_Heatmap__WEBPACK_IMPORTED_MODULE_11__["default"]({
           source: vectorSource,
           blur: parseInt(heat_blur, 10),
           radius: parseInt(heat_radius, 10),
@@ -53013,17 +53074,17 @@ function (_super) {
           marker_color = _b.marker_color,
           marker_stroke = _b.marker_stroke;
       var buffer = this.props.data.series[0].fields[0].values.buffer;
-      var vectorSource = Object(_utils_helpers__WEBPACK_IMPORTED_MODULE_13__["processDataES"])(buffer);
-      this.markersLayer = new ol_layer__WEBPACK_IMPORTED_MODULE_5__["Vector"]({
+      var vectorSource = Object(_utils_helpers__WEBPACK_IMPORTED_MODULE_14__["processDataES"])(buffer);
+      this.markersLayer = new ol_layer__WEBPACK_IMPORTED_MODULE_6__["Vector"]({
         source: vectorSource,
         zIndex: 2,
-        style: new ol_style__WEBPACK_IMPORTED_MODULE_9__["Style"]({
-          image: new ol_style__WEBPACK_IMPORTED_MODULE_9__["Circle"]({
+        style: new ol_style__WEBPACK_IMPORTED_MODULE_10__["Style"]({
+          image: new ol_style__WEBPACK_IMPORTED_MODULE_10__["Circle"]({
             radius: marker_radius,
-            fill: new ol_style__WEBPACK_IMPORTED_MODULE_9__["Fill"]({
+            fill: new ol_style__WEBPACK_IMPORTED_MODULE_10__["Fill"]({
               color: marker_color
             }),
-            stroke: new ol_style__WEBPACK_IMPORTED_MODULE_9__["Stroke"]({
+            stroke: new ol_style__WEBPACK_IMPORTED_MODULE_10__["Stroke"]({
               color: marker_stroke,
               width: 1
             })
@@ -53040,8 +53101,8 @@ function (_super) {
           heat_blur = _c.heat_blur,
           heat_opacity = _c.heat_opacity;
       var buffer = this.props.data.series[0].fields[0].values.buffer;
-      var vectorSource = Object(_utils_helpers__WEBPACK_IMPORTED_MODULE_13__["processDataES"])(buffer);
-      this.heatmapLayer = new ol_layer_Heatmap__WEBPACK_IMPORTED_MODULE_10__["default"]({
+      var vectorSource = Object(_utils_helpers__WEBPACK_IMPORTED_MODULE_14__["processDataES"])(buffer);
+      this.heatmapLayer = new ol_layer_Heatmap__WEBPACK_IMPORTED_MODULE_11__["default"]({
         source: vectorSource,
         blur: parseInt(heat_blur, 10),
         radius: parseInt(heat_radius, 10),
@@ -53057,8 +53118,8 @@ function (_super) {
       }
 
       if (this.props.options.tile_url !== '') {
-        this.randomTile = new ol_layer__WEBPACK_IMPORTED_MODULE_5__["Tile"]({
-          source: new ol_source_XYZ__WEBPACK_IMPORTED_MODULE_4__["default"]({
+        this.randomTile = new ol_layer__WEBPACK_IMPORTED_MODULE_6__["Tile"]({
+          source: new ol_source_XYZ__WEBPACK_IMPORTED_MODULE_5__["default"]({
             url: this.props.options.tile_url
           }),
           zIndex: 1
@@ -53073,7 +53134,7 @@ function (_super) {
 
     if (prevProps.options.center_lat !== this.props.options.center_lat || prevProps.options.center_lon !== this.props.options.center_lon) {
       this.map.getView().animate({
-        center: Object(ol_proj__WEBPACK_IMPORTED_MODULE_6__["fromLonLat"])([this.props.options.center_lon, this.props.options.center_lat]),
+        center: Object(ol_proj__WEBPACK_IMPORTED_MODULE_7__["fromLonLat"])([this.props.options.center_lon, this.props.options.center_lat]),
         duration: 2000
       });
     }
@@ -53097,13 +53158,13 @@ function (_super) {
             marker_color = _e.marker_color,
             marker_stroke = _e.marker_stroke;
         this.map.removeLayer(this.markersLayer);
-        this.markersLayer.setStyle(new ol_style__WEBPACK_IMPORTED_MODULE_9__["Style"]({
-          image: new ol_style__WEBPACK_IMPORTED_MODULE_9__["Circle"]({
+        this.markersLayer.setStyle(new ol_style__WEBPACK_IMPORTED_MODULE_10__["Style"]({
+          image: new ol_style__WEBPACK_IMPORTED_MODULE_10__["Circle"]({
             radius: marker_radius,
-            fill: new ol_style__WEBPACK_IMPORTED_MODULE_9__["Fill"]({
+            fill: new ol_style__WEBPACK_IMPORTED_MODULE_10__["Fill"]({
               color: marker_color
             }),
-            stroke: new ol_style__WEBPACK_IMPORTED_MODULE_9__["Stroke"]({
+            stroke: new ol_style__WEBPACK_IMPORTED_MODULE_10__["Stroke"]({
               color: marker_stroke,
               width: 1
             })
