@@ -192,9 +192,15 @@ export class MainPanel extends PureComponent<Props> {
       this.map.removeLayer(this.heatmapLayer);
 
       const { marker_radius, marker_color, marker_stroke } = this.props.options;
-      const { buffer } = this.props.data.series[0].fields[0].values as Buffer;
-
-      const vectorSource = processDataES(buffer);
+      let vectorSource: VectorSource;
+      if (this.props.data.series.length > 0) {
+        const { buffer } = this.props.data.series[0].fields[0].values as Buffer;
+        vectorSource = processDataES(buffer);
+      } else {
+        vectorSource = new VectorSource({
+          features: [],
+        });
+      }
 
       this.markersLayer = new VectorLayer({
         source: vectorSource,
@@ -217,9 +223,16 @@ export class MainPanel extends PureComponent<Props> {
       this.map.removeLayer(this.markersLayer);
 
       const { heat_radius, heat_blur, heat_opacity } = this.props.options;
-      const { buffer } = this.props.data.series[0].fields[0].values as Buffer;
+      let vectorSource: VectorSource;
 
-      const vectorSource = processDataES(buffer);
+      if (this.props.data.series.length > 0) {
+        const { buffer } = this.props.data.series[0].fields[0].values as Buffer;
+        vectorSource = processDataES(buffer);
+      } else {
+        vectorSource = new VectorSource({
+          features: [],
+        });
+      }
 
       this.heatmapLayer = new Heatmap({
         source: vectorSource,

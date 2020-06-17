@@ -53073,8 +53073,17 @@ function (_super) {
           marker_radius = _b.marker_radius,
           marker_color = _b.marker_color,
           marker_stroke = _b.marker_stroke;
-      var buffer = this.props.data.series[0].fields[0].values.buffer;
-      var vectorSource = Object(_utils_helpers__WEBPACK_IMPORTED_MODULE_14__["processDataES"])(buffer);
+      var vectorSource = void 0;
+
+      if (this.props.data.series.length > 0) {
+        var buffer = this.props.data.series[0].fields[0].values.buffer;
+        vectorSource = Object(_utils_helpers__WEBPACK_IMPORTED_MODULE_14__["processDataES"])(buffer);
+      } else {
+        vectorSource = new ol_source_Vector__WEBPACK_IMPORTED_MODULE_3__["default"]({
+          features: []
+        });
+      }
+
       this.markersLayer = new ol_layer__WEBPACK_IMPORTED_MODULE_6__["Vector"]({
         source: vectorSource,
         zIndex: 2,
@@ -53100,8 +53109,17 @@ function (_super) {
           heat_radius = _c.heat_radius,
           heat_blur = _c.heat_blur,
           heat_opacity = _c.heat_opacity;
-      var buffer = this.props.data.series[0].fields[0].values.buffer;
-      var vectorSource = Object(_utils_helpers__WEBPACK_IMPORTED_MODULE_14__["processDataES"])(buffer);
+      var vectorSource = void 0;
+
+      if (this.props.data.series.length > 0) {
+        var buffer = this.props.data.series[0].fields[0].values.buffer;
+        vectorSource = Object(_utils_helpers__WEBPACK_IMPORTED_MODULE_14__["processDataES"])(buffer);
+      } else {
+        vectorSource = new ol_source_Vector__WEBPACK_IMPORTED_MODULE_3__["default"]({
+          features: []
+        });
+      }
+
       this.heatmapLayer = new ol_layer_Heatmap__WEBPACK_IMPORTED_MODULE_11__["default"]({
         source: vectorSource,
         blur: parseInt(heat_blur, 10),
@@ -53208,6 +53226,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _grafana_ui__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @grafana/ui */ "@grafana/ui");
 /* harmony import */ var _grafana_ui__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_grafana_ui__WEBPACK_IMPORTED_MODULE_2__);
 
+ //@ts-ignore
 
 
 var PanelEditor = function PanelEditor(_a) {

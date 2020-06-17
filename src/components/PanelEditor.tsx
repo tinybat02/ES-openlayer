@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+//@ts-ignore
 import { FormField, PanelOptionsGroup } from '@grafana/ui';
 import { PanelEditorProps } from '@grafana/data';
 
