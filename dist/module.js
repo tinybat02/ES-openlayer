@@ -53397,7 +53397,7 @@ var PanelEditor = function PanelEditor(_a) {
     value: inputs.heat_opacity,
     onChange: handleChange
   }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-    className: "btn btn-outline-primary",
+    className: "btn btn-primary",
     onClick: handleSubmit
   }, "Submit"));
 };

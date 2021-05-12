@@ -170,7 +170,7 @@ export const PanelEditor: React.FC<PanelEditorProps<MapOptions>> = ({ options, o
         </div>
       </div>
 
-      <button className="btn btn-outline-primary" onClick={handleSubmit}>
+      <button className="btn btn-primary" onClick={handleSubmit}>
         Submit
       </button>
     </PanelOptionsGroup>
